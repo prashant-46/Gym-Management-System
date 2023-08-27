@@ -75,16 +75,5 @@ public class GymMemberRestController {
 			public void delete(@PathVariable("memberId") int id){
 			   gymMemberService.deleteById(id);
 		   }
-		   
-//		 	@PostMapping("/gymmemberdtos/save")
-//		  	public ResponseEntity<?> save(GymMemberDTO dto) { // data input as form-data, so no @RequestBody
-//		  		 System.out.println(dto.toString());
-//		 		GymMember b = GymMemberDTO.toEntity(dto);
-//		  		GymMember newGymMember = gymMemberService.save(b);
-//		  		GymMemberDTO newDto = GymMemberDTO.fromEntity(newGymMember);
-//		  		HashMap<String, Object> result = new HashMap<String, Object>();
-//		  		result.put("status", "success");
-//		  		result.put("data", newDto);
-//		  		return ResponseEntity.ok(result);
-//		  	}
+
 }

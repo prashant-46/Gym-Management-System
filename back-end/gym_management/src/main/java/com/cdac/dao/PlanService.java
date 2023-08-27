@@ -11,7 +11,5 @@ public interface PlanService {
 	    Plan save(Plan pl);
 	    Plan update(Plan pl);
 	    void deleteById(int subplanId);
-	  //  public Plan authenticate(String email, String password);
-	  // Plan findByEmail(String email);
-	  //	List<Plan> findByRole(String role) ;
+
 }

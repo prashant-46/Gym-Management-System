@@ -11,6 +11,5 @@ public interface GymMemberService {
     GymMember save(GymMember gm);
     GymMember update(GymMember gm);
     void deleteById(int memberId);
-//    GymMember findByEmail(String email);
-	//List<GymMember> findByRole(String role) ;
+
 }

@@ -29,11 +29,7 @@ public class GymMemberDTORestController {
 
 	@Autowired
 	private PlanService planService;
-//	      @GetMapping("/gymmembers")
-//	  	public ResponseEntity<?> findById(@PathVariable("id") int id) {
-//	  		Book b =  bookService.findById(id);
-//	  		return ResponseEntity.ok(BookDTO.fromEntity(b));
-//	  	}
+
 
 	@PostMapping("/gymmemberdtos")
 	public ResponseEntity<?> saveDetails(GymMemberDTO dto){ // data input as form-data, so no
@@ -51,7 +47,6 @@ public class GymMemberDTORestController {
 		b.setUser(u);
 		b.setPlan(p);
 		b.setJoinDate(new Date());
-		// b = gymMemberservice.save(b);
 		GymMember newGymMember = gymMemberService.save(b);
 
 		GymMemberDTO newDto = GymMemberDTO.fromEntity(newGymMember);

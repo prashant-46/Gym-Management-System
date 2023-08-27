@@ -98,7 +98,6 @@ public class GymMemberDTO {
 		dto.setHeight(gm.getHeight());
 		dto.setJoinDate(gm.getJoinDate());
 		dto.setWeight(gm.getWeight());
-		// dto.setSubplanId(gm.getPlan().getSubplanId());
 		dto.setUser_id(gm.getUser().getUser_id());
 		dto.setSubplanId(gm.getPlan().getSubplanId());
 		return dto;
@@ -109,13 +108,7 @@ public class GymMemberDTO {
 		gm.setMemberId(dto.getMemberId());
 		gm.setGender(dto.getGender());
 		gm.setHeight(dto.getHeight());
-		// gm.setJoinDate(dto.getJoinDate());
 		gm.setWeight(dto.getWeight());
-
-		// gm.getPlan().setSubplanId(dto.getSubplanId());
-		// gm.getUser().setUser_id(dto.getUser_id());
-		// gm.getPlan().setSubplanId(dto.getSubplanId());
-		// gm.getUser().setUser_id(dto.getUser_id());
 
 		return gm;
 	}

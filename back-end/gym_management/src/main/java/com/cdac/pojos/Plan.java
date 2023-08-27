@@ -17,9 +17,7 @@ public class Plan {
 	private String planName;
 	private int duration;
 	private int amount;
-	/*
-	 * @OneToOne(mappedBy = "plan") private GymMember gymmember;
-	 */
+	
 	
 	public Plan() {
 		
@@ -31,7 +29,7 @@ public class Plan {
 		this.planName = planName;
 		this.duration = duration;
 		this.amount = amount;
-		//this.gymmember = gymmember;
+		
 	}
 
 	public int getSubplanId() {
@@ -66,11 +64,7 @@ public class Plan {
 		this.amount = amount;
 	}
 
-	/*
-	 * public GymMember getGymmember() { return gymmember; }
-	 * 
-	 * public void setGymmember(GymMember gymmember) { this.gymmember = gymmember; }
-	 */
+	
 	@Override
 	public String toString() {
 		return "Plan [planName=" + planName + ", duration=" + duration + ", amount="

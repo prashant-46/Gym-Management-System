@@ -10,6 +10,5 @@ import com.cdac.pojos.User;
 
 
 public interface PlanDao extends JpaRepository<Plan , Integer> {
-	//User findByEmail(String email);
-	//List<User> findByRole(String role);
+	
 }

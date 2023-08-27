@@ -22,8 +22,7 @@ public class UserRestController {
 
 	@Autowired
 	private UserService userService;
-	
-//******************************************************************************************************************************	
+		
 
    //get user by Id
 	@GetMapping("/users/{user_id}")
@@ -34,7 +33,7 @@ public class UserRestController {
 		 map.put("data", user);
 		return ResponseEntity.ok(map);
 	}
-//******************************************************************************************************************************
+
 	//get user by email
 	@GetMapping("/users/email/{email}")
 	public ResponseEntity<User> findByEmail(@PathVariable("email") String email) {
@@ -43,15 +42,15 @@ public class UserRestController {
 			return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
 		return ResponseEntity.ok(user);
 	}
-//******************************************************************************************************************************	
+	
 	//get all user
 	@GetMapping("/users")
 	public ResponseEntity<List<User>> findAll() {
 		List<User> list = userService.findAll();
 		return new ResponseEntity<>(list, HttpStatus.OK);
 	}
-//******************************************************************************************************************************	
-    //save or update user(member)
+
+	//save or update user(member)
 	@PostMapping("/users/save")
 	public ResponseEntity<User> save (@RequestBody User user)
 	{
@@ -59,23 +58,23 @@ public class UserRestController {
 	   User newUser = userService.save(user);
 	   return ResponseEntity.ok(newUser);
    }
-//******************************************************************************************************************************	
-	  //save or update user(admin + trainer)
+
+	//save or update user(admin + trainer)
 		@PostMapping("/users/saveAdTrain")
 		public ResponseEntity<User> saveAdTrain(@RequestBody User user){
 		   User newUser = userService.save(user);
 		   return ResponseEntity.ok(newUser);
 	   }
-//******************************************************************************************************************************
-   	//update user
+
+		//update user
 	@PutMapping("/users/update/{user_id}")
 	public ResponseEntity<User> update(@PathVariable("user_id") int id,@RequestBody User user){
 	   user.setUser_id(id);
 	   User newUser = userService.update(user);
 	   return ResponseEntity.ok(newUser);
    }
-//******************************************************************************************************************************   
-    //delete user
+
+	//delete user
    @DeleteMapping("/users/delete/{user_id}")
 	public void delete(@PathVariable("user_id") int id){
 		userService.deleteById(id);

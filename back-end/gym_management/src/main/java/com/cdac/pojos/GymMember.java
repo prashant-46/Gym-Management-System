@@ -113,28 +113,6 @@ public class GymMember {
 		return "GymMember [memberId=" + memberId + ", gender=" + gender + ", joinDate=" + joinDate + ", height="
 				+ height + ", weight=" + weight + ", user=" + user + ", plan=" + plan + "]";
 	}
-
-//	@Override
-//	public String toString() {
-//		return "GymMember [memberId=" + memberId + ", gender=" + gender + ", joinDate=" + joinDate + ", height="
-//				+ height + ", weight=" + weight + ", user=" + user + ", subplanId=" + plan + "]";
-//	}
-
-//	@Override
-//	public String toString() {
-//		return "GymMember [memberId=" + memberId + ", gender=" + gender + ", joinDate=" + joinDate + ", height="
-//				+ height + ", weight=" + weight + "]";
-//	}
-
-
-
-//	@Override
-//	public String toString() {
-//		return "GymMember [memberId=" + memberId + ", gender=" + gender + ", joinDate=" + joinDate + ", height="
-//				+ height + ", weight=" + weight + ", user=" + user + ", plan=" + plan + "]";
-//	}
-	
-	
 	
 	
 }

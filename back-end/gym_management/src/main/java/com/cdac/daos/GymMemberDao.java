@@ -9,6 +9,5 @@ import com.cdac.pojos.User;
 
 public interface GymMemberDao extends JpaRepository<GymMember, Integer> {
  
-	//GymMember findByEmail(String email);
-	//List<GymMember> findByRole(String role);
+	
 }

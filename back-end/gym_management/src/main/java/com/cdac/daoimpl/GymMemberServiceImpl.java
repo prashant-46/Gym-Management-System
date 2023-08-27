@@ -50,19 +50,4 @@ public class GymMemberServiceImpl implements GymMemberService{
 
 		}
 
-		
-		
-		
-
-	
-		
-//		@Override
-//		public GymMember findByEmail(String email) {
-//			return gymMemberDao.findByEmail(email);
-//		}
-//
-//		@Override
-//		public List<User> findByRole(String role) {
-//			return userDao.findByRole(role);
-//		}
 }
