@@ -54,7 +54,7 @@ public class GymMemberDTORestController {
 		result.put("status", "success");
 		result.put("data", newDto);
 		return ResponseEntity.ok(result);
-		// return Response.success(b);
+		
 
 	}
 

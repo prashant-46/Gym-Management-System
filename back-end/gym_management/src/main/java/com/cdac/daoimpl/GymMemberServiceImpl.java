@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.cdac.dao.GymMemberService;
-import com.cdac.daos.GymMemberDao;
+import com.cdac.dao.GymMemberDao;
 import com.cdac.pojos.GymMember;
 import com.cdac.pojos.User;
 

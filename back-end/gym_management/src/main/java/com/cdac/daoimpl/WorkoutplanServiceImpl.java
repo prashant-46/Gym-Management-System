@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.cdac.dao.WorkoutplanService;
-import com.cdac.daos.WorkoutplanDao;
+import com.cdac.dao.WorkoutplanDao;
 import com.cdac.pojos.Workoutplan;
 
 @Transactional

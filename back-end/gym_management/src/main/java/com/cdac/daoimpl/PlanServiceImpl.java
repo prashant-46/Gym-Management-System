@@ -9,8 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.cdac.dao.PlanService;
-import com.cdac.daos.PlanDao;
-import com.cdac.daos.UserDao;
+import com.cdac.dao.PlanDao;
+import com.cdac.dao.UserDao;
 import com.cdac.pojos.Plan;
 import com.cdac.pojos.User;
 

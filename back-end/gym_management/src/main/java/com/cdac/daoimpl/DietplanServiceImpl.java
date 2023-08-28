@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.cdac.dao.DietplanService;
-import com.cdac.daos.DietplanDao;
+import com.cdac.dao.DietplanDao;
 import com.cdac.pojos.Dietplan;
 
 

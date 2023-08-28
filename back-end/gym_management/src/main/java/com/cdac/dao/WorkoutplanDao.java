@@ -1,4 +1,4 @@
-package com.cdac.daos;
+package com.cdac.dao;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
